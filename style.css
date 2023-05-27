@@ -1,0 +1,279 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e3f2fd;
+}
+.wrapper {
+  width: 450px;
+  height: 360px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 9px;
+  transition: height 0.2s ease;
+}
+.wrapper.active {
+  height: 800px;
+}
+.wrapper .upload-box {
+  height: 225px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #afafaf;
+}
+.wrapper.active .upload-box {
+  border: none;
+}
+.upload-box p {
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+.wrapper.active .upload-box p {
+  display: none;
+}
+.wrapper.active .upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.wrapper .content {
+  opacity: 0;
+  margin-top: 28px;
+  pointer-events: none;
+}
+.wrapper.active .content {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.content .row {
+  display: flex;
+  justify-content: space-between;
+}
+.content .row .column {
+  width: calc(100% / 2 - 15px);
+}
+.row .column label {
+  font-size: 1.06rem;
+}
+.sizes .column input {
+  width: 100%;
+  height: 49px;
+  outline: none;
+  margin-top: 7px;
+  padding: 0 15px;
+  font-size: 1.06rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+.sizes .column input:focus {
+  padding: 0 14px;
+  border: 2px solid #5372f0;
+}
+.content .checkboxes {
+  margin-top: 20px;
+  display: block;
+}
+.checkboxes .column {
+  display: flex;
+  align-items: center;
+}
+.checkboxes .column input {
+  width: 17px;
+  height: 17px;
+  margin-right: 9px;
+  accent-color: #5372f0;
+}
+.content .download-btn {
+  width: 100%;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.06rem;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 30px 0 10px;
+  background: #5372f0;
+  text-transform: uppercase;
+}
+.ratio {
+  width: 100% !important;
+}
+.quality {
+  width: 100% !important;
+}
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 100;
+  border-bottom: 1px solid #000;
+}
+.wrapper2 {
+  margin-top: 10px;
+  text-align: center;
+  background: #fff;
+  min-height: 175px;
+  border: 1px solid #ccc;
+}
+.router {
+  display: block;
+  float: left;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.icon {
+  display: block;
+  color: #5372f0;
+  font-size: 30px;
+}
+.icon-name {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  bottom: 5px;
+  font-size: 16px;
+}
+.footer {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.onurkul {
+  text-decoration: none;
+  color: #000;
+  font-weight: 100;
+  font-size: 14px;
+  position: relative;
+  top: 5px;
+}
+.router-center {
+  position: relative;
+  left: 20px;
+}
+.router-center2 {
+  position: relative;
+  left: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .wrapper2 {
+    flex-wrap: wrap-reverse;
+  }
+  .router {
+    margin-left: 40px !important;
+    margin-top: 15px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper2 {
+    flex-wrap: wrap-reverse;
+    min-height: 175px;
+  }
+  .router {
+    margin-left: 25px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    display: block;
+    color: #5372f0;
+    font-size: 30px;
+  }
+  .icon-name {
+    position: relative;
+    bottom: 5px;
+    font-size: 15px;
+  }
+  .onurkul {
+    text-decoration: none;
+    color: #000;
+    font-weight: 100;
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+  }
+  .router-center {
+    position: relative;
+    left: 17px;
+  }
+  .router-center2 {
+    position: relative;
+    left: 65px;
+  }
+  .title {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .router {
+    margin-left: 40px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    display: block;
+    color: #5372f0;
+    font-size: 30px;
+  }
+  .icon-name {
+    position: relative;
+    bottom: 5px;
+    font-size: 14px;
+  }
+  .router-center {
+    position: relative;
+    left: 15px;
+  }
+  .router-center2 {
+    position: relative;
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper2 {
+    flex-wrap: wrap-reverse;
+    min-height: 140px;
+  }
+  .router {
+    margin-left: 25px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    display: block;
+    color: #5372f0;
+    font-size: 20px;
+  }
+  .icon-name {
+    position: relative;
+    bottom: 5px;
+    font-size: 14px;
+  }
+  .router-center {
+    position: relative;
+    left: 15px;
+  }
+  .router-center2 {
+    position: relative;
+    left: 60px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}

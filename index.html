@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resim Boyutlandırma | Onur KUL</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bu araç ile resimlerinizi boyutlandırıp, sıkıştırabilir ve kolay bir şekilde resim olarak tekrar indirebilirsiniz."
+    />
+    <meta name="author" content="Onur KUL" />
+    <meta name="publisher" content="Onur KUL" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 Days" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Onur KUL" />
+    <meta
+      property="og:image"
+      content="https://onurkul.com.tr/uploads/logo/logo_61fda0d03b48f0-92709354-65066295.png"
+    />
+    <meta property="og:image:width" content="180" />
+    <meta property="og:image:height" content="50" />
+    <meta property="og:type" content="website/" />
+    <meta property="og:title" content="Resim Boyutlandırma | Onur KUL" />
+    <meta
+      property="og:description"
+      content="Bu araç ile resimlerinizi boyutlandırıp, sıkıştırabilir ve kolay bir şekilde resim olarak tekrar indirebilirsiniz."
+    />
+    <meta
+      property="og:url"
+      content="https://onurkul.com.tr/araclar/resim-boyutlandirma/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Onur KUL" />
+    <meta name="twitter:title" content="Resim Boyutlandırma | Onur KUL" />
+    <meta
+      name="twitter:description"
+      content="Bu araç ile resimlerinizi boyutlandırıp, sıkıştırabilir ve kolay bir şekilde resim olarak tekrar indirebilirsiniz."
+    />
+    <meta
+      name="twitter:image"
+      content="https://onurkul.com.tr/uploads/logo/logo_61fda0d03b48f0-92709354-65066295.png"
+    />
+    <link
+      rel="canonical"
+      href="https://onurkul.com.tr/araclar/resim-boyutlandirma/"
+    />
+    <link
+      rel="alternate"
+      href="https://onurkul.com.tr/araclar/resim-boyutlandirma/"
+      hreflang="tr_TR"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://onurkul.com.tr/uploads/logo/favicon_62096e9aa3b474-30316417-17601085.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Resim Boyutlandırma</h1>
+      <div class="upload-box">
+        <input type="file" accept="image/*" hidden />
+        <img src="upload-icon.svg" alt="Resim Yükle" />
+        <p>Yüklenecek Resmi Seçin</p>
+      </div>
+      <div class="content">
+        <div class="row sizes">
+          <div class="column width">
+            <label>Genişlik</label>
+            <input type="number" />
+          </div>
+          <div class="column height">
+            <label>Yükseklik</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="row checkboxes">
+          <div class="column ratio">
+            <input type="checkbox" id="ratio" checked />
+            <label for="ratio">En Boy Oranını Sabit Tut</label>
+          </div>
+          <div class="column quality">
+            <input type="checkbox" id="quality" />
+            <label for="quality">Kaliteyi Düşür (Sıkıştır)</label>
+          </div>
+        </div>
+        <button class="download-btn">Resmi İndir</button>
+      </div>
+      <div class="wrapper2" style="display: none" id="open">
+        <div class="router-center">
+          <div class="router">
+            <a class="icon" href="https://onurkul.com.tr/" target="_blank"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+            <a class="icon-name" href="https://onurkul.com.tr/" target="_blank"
+              >Ana Sayfa</a
+            >
+          </div>
+        </div>
+        <div class="router-center2">
+          <div class="router">
+            <a
+              class="icon"
+              href="https://onurkul.com.tr/araclar/resim-kirpma"
+              target="_blank"
+              ><i class="fa-solid fa-crop"></i
+            ></a>
+            <a
+              class="icon-name"
+              href="https://onurkul.com.tr/araclar/resim-kirpma"
+              target="_blank"
+              >Resim Kırp</a
+            >
+          </div>
+        </div>
+        <div class="router">
+          <a
+            class="icon"
+            href="https://onurkul.com.tr/araclar/resim-duzenleyici"
+            target="_blank"
+            ><i class="fa-solid fa-sliders"></i
+          ></a>
+          <a
+            class="icon-name"
+            href="https://onurkul.com.tr/araclar/resim-duzenleyici"
+            target="_blank"
+            >Resim Düzenle</a
+          >
+        </div>
+        <div class="router">
+          <a
+            class="icon"
+            href="https://onurkul.com.tr/araclar/resimden-renk-secme"
+            target="_blank"
+            ><i class="fa-solid fa-eye-dropper"></i
+          ></a>
+          <a
+            class="icon-name"
+            href="https://onurkul.com.tr/araclar/resimden-renk-secme"
+            target="_blank"
+            >Resimden Renk Seç</a
+          >
+        </div>
+      </div>
+      <div class="footer">
+        <a href="https://onurkul.com.tr/" target="_blank" class="onurkul"
+          >Telif Hakkı © 2023 Onur KUL - Tüm Hakları Saklıdır.</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
