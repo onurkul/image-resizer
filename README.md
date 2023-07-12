@@ -1,4 +1,4 @@
-# Resim Boyutlandırma
- Bu araç ile resimlerini kolayca yeniden boyutlandırabilirsiniz.
+# Image Resizer
+With this tool you can easily resize your images.
  
-Örnek: https://onurkul.com.tr/araclar/resim-boyutlandirma/
+Example: https://onurkul.com.tr/araclar/resim-boyutlandirma/
